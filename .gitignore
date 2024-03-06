@@ -1,0 +1,8 @@
+.DS_Store
+common_voice
+test_set.pkl
+train_set.pkl
+validation_set.pkl
+X_mfccs.npy
+y_mfccs.npy
+mfccs_df.csv
