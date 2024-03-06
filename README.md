@@ -14,6 +14,11 @@ The dataset, sourced from the Mozilla Common Voice project, features recordings 
 
 After initial experiments with both mel-spectrograms and MFCCs, it was found that MFCCs significantly outperformed mel-spectrograms, leading to their selection as the primary feature for analysis. MFCCs are favored for their ability to closely mimic the human auditory system's response, capturing key spectral properties of sound that are critical for distinguishing between different voices. The inclusion of MFCC derivatives and second derivatives (delta and delta-delta MFCCs) further enriches the models' understanding of sound, providing insights into the rate of change in features that are essential for capturing temporal variations in speech.
 
+<figure>
+  <figcaption>Underlying patterns of MFCCS dataset through PCA</figcaption>
+  <img src='images/pca_analysis.png' width=700 height=500>
+</figure>
+
 ## Tested Models and Performance Metrics
 
 Three ML models were developed, each with varying complexity and tailored to best utilize the MFCC features:
@@ -44,6 +49,10 @@ Input -> Bi-LSTM -> Bi-LSTM -> GlobalAveragePooling1D -> Flatten -> Dense -> Dro
 - **Test Accuracy**: 0.85
 
 Enhanced with light regularization in the Bi-LSTM and Dense layers, along with recurrent output regularization, this model emerged as the most stable and performant, accurately capturing the nuances of the target voices.
+<figure>
+<figcaption>---- Test set confusion matrix ----</figcaption>
+<img src='images/confusion_matrix.png' alt = 'confusion matrix'>
+</figure>
 
 ### Understanding Bidirectional LSTMs
 
