@@ -16,7 +16,7 @@ After initial experiments with both mel-spectrograms and MFCCs, it was found tha
 
 <figure>
   <figcaption>Underlying patterns of MFCCS dataset through PCA</figcaption>
-  <img src='images/pca_analysis.png' width=700 height=500>
+  <img src='images/pca_analysis_2.png' width=700 height=500>
 </figure>
 
 ## Tested Models and Performance Metrics
