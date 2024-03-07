@@ -35,8 +35,8 @@ Input -> GlobalMaxPooling1D -> Dense -> Dense -> Output
 Input -> LSTM -> GlobalAveragePooling1D -> Flatten -> Dense -> Dropout -> Output
 ```
 - **Val Loss**: 0.9
-- **Train Accuracy**: 0.89
 - **Val Accuracy**: 0.83
+- **Train Accuracy**: 0.89
 
 This model, while training quickly and achieving decent results, displayed a tendency to overfit, underscoring the need for effective regularization strategies.
 
@@ -60,5 +60,5 @@ In this context, "Bidirectional" processing means that the model analyzes data b
 
 ## Conclusion
 
-The Speech Recognition Project demonstrates the potential of machine learning in the field of audio signal processing, particularly through the focused application of MFCCs and neural network architectures. By progressing from basic models to more complex and finely tuned ones, the project highlights the importance of feature selection, model architecture, and regularization in achieving accurate and reliable speech recognition. The advanced Bi-LSTM model, with its bidirectional processing and optimized use of MFCCs, signifies a significant stride forward in voice recognition technology, offering insights and frameworks for future research and applications in sound analysis.
+The Speech Recognition Project demonstrates the potential of machine learning in the field of audio signal processing, particularly through the focused application of MFCCs and neural network architectures. By progressing from basic models to more complex and finely tuned ones, the project highlights the importance of feature selection, model architecture, and regularization in achieving accurate and reliable speech recognition. The advanced Bi-LSTM model, with its bidirectional processing and optimized use of MFCCs, signifies a significant stride forward in voice recognition technology, offering insights and frameworks for research and applications in sound analysis.
 
